@@ -26,29 +26,37 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
         <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
         <link rel="shortcut icon" href="images/googleFavico.png">
+
+
+        <style>
+            .product {
+                border: 1px solid #000;
+                margin: 10px;
+                padding: 10px;
+                width: 200px;
+            }
+            .product img {
+                width: 100%;
+            }
+            .description {
+                display: none;
+            }
+        </style>
         
-        
-        <!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '2141663326028822');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=2141663326028822&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+        <script>
+            function showDescription(id) {
+                var x = document.getElementById(id);
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+
     </head>
     
     <body>
-
         <div class="navbar">
             <div class="navbar-inner">
                 <div class="container">
@@ -56,7 +64,7 @@
                         <!-- <img src="" width="40" height="40" alt="Logo" /> -->
                         <!-- This is website logo -->
                     </a>
-                    <a href="#"><h5 id="logohome"> DỊCH VỤ NẠP CARD ĐIỆN THOẠI CHO WAG</h5></a>
+                    <a href="#"><h5 id="logohome"> DANH SÁCH SẢN PHẨM - 0838288000 </h5></a>
                     <!-- Navigation button, visible on small resolution -->
                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                         <i class="icon-menu"></i>
@@ -64,7 +72,7 @@
                     <!-- Main navigation -->
                     <div class="nav-collapse collapse pull-right">
                         <ul class="nav" id="top-navigation">
-                            <li class="active"><a href="#home"> CHÚC BẠN 1 NGÀY TỐT LÀNH ...!</a></li>                            <!-- <li><a href="#portfolio">Sản phẩm</a></li>
+                            <li class="active"><a href="#home"> CẢM ƠN BẠN ĐÃ TIN TƯỞNG VÀ CHỌN MUA LAPTOP CỦA 0838288000 </a></li>                            <!-- <li><a href="#portfolio">Sản phẩm</a></li>
                             <li><a href="#">Đăng nhập</a></li>
                             <li><a href="#clients">Đăng ký</a></li>
                             <li><a href="#">Bảng giá</a></li>
@@ -74,53 +82,29 @@
                     <!-- End main navigation -->
                 </div>
             </div>
-        </div>
-        <!-- Start home section -->
-        <p id="nhaptt">Vui lòng nhập đầy đủ và chính xác thông tin thẻ cào !!</p>
-        <div id="card">
-            <div id="input">
-                <form action="" method="post">
-                    <input id="phoneNumber" type="text" name="phoneNumber" placeholder="Số điện thoại của bạn"> 
-                </form>
+
+*/======================================================================
+            <h1>Chào mừng đến với trang web bán laptop của chúng tôi!</h1>
+            <div class="product">
+                <h2>Laptop 1</h2>
+                <img src="laptop1.jpg" alt="Laptop 1">
+                <p>Giá: 20 triệu đồng</p>
+                <button onclick="showDescription('desc1')">Cấu hình</button>
+                <div id="desc1" class="description">
+                    <p>Miêu tả sản phẩm 1</p>
+                </div>
             </div>
-            <iframe src="https://gachthe247.com/manhung/index/7745b6e51e6d5c63893b1d14e8e4ffe3" width="100%" height="100%" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-            <div id="warn">
-                <p>Lưu ý: Bắt buộc chọn <strong>đúng MỆNH GIÁ</strong> của thẻ cào !</p>
-                <p>Nếu chọn nhầm thẻ cào sẽ không được tính, cẩn thận bạn nhé !</p>
+            <div class="product">
+                <h2>Laptop 2</h2>
+                <img src="laptop2.jpg" alt="Laptop 2">
+                <p>Giá: 25 triệu đồng</p>
+                <button onclick="showDescription('desc2')">Cấu hình</button>
+                <div id="desc2" class="description">
+                    <p>Miêu tả sản phẩm 2</p>
+                </div>
             </div>
-        </div>
+            <!-- Thêm nhiều sản phẩm khác tại đây -->
         
 
-        
-        <!-- Footer section start -->
-        <div class="footer" style="position: fixed; bottom: 0; left: 0; right: 0;">
-            
-        </div>
-        <!-- Footer section end -->
-        <!-- ScrollUp button start -->
-        <div class="scrollup">
-            <a href="#">
-                <i class="icon-up-open"></i>
-            </a>
-        </div>
-        <!-- ScrollUp button end -->
-        <!-- Include javascript -->
-        <script src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
-        <script type="text/javascript" src="js/modernizr.custom.js"></script>
-        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
-        <script type="text/javascript" src="js/jquery.cslider.js"></script>
-        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
-        <script type="text/javascript" src="js/jquery.inview.js"></script>
-
-        <script type="text/javascript" src="js/login.js"></script>
-        <!-- Load google maps api and call initializeMap function defined in app.js -->
-        <script async="" defer="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap"></script>
-        <!-- css3-mediaqueries.js for IE8 or older -->
-        <!--[if lt IE 9]>
-            <script src="js/respond.min.js"></script>
-        <![endif]-->
-        <script type="text/javascript" src="js/app.js"></script>
     </body>
 </html>
